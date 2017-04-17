@@ -1,0 +1,37 @@
+<ion-view>
+  <ion-nav-title>Add Event</ion-nav-title>
+  <ion-content padding="true">
+    <br>
+    <form name="form.event" ng-submit="form.event.$valid && addEvent()">
+      <label class="item item-input">
+        <input type="text" ng-model="event.name" required="required" placeholder="Name">
+      </label>
+      <br />
+      <label class="item item-input">
+        <input type="text" ng-model="event.address" required="required" placeholder="Address">
+      </label>
+      <br />
+      <label class="item item-input">
+        <input type="text" ng-model="event.city" required="required" placeholder="City">
+      </label>
+      <br />
+      <label class="item item-input">
+        <input type="text" ng-model="event.dates" required="required" placeholder="Dates">
+      </label>
+      <br />
+      <label class="item item-input">
+        <input type="text" ng-model="event.contact.tel" required="required" placeholder="Phone Number">
+      </label>
+      <br />
+      <label class="item item-input">
+        <input type="text" ng-model="event.contact.email" required="required" placeholder="Email">
+      </label>
+      <br />
+      <label class="item item-input">
+        <input type="text" ng-model="event.website" required="required" placeholder="Website">
+      </label>
+      <br />
+      <button class="button button-positive button-block" ng-disabled="form.event.$invalid"><strong>Add Event</strong></button>
+    </form>
+  </ion-content>
+</ion-view>
